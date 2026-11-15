@@ -325,41 +325,9 @@ Its main limitation in this comparison is that it must scan the text separately 
 
 As the number of patterns grows, this repeated work becomes expensive.
 
-## 9. How to Run the Project
 
-The project requires Java 17 or later.
 
-All four Java source files should be placed in the same project folder.
 
-First, compile the files:
-
-```bash
-javac -encoding UTF-8 *.java
-```
-
-Run the correctness tests:
-
-```bash
-java Tests
-```
-
-Expected result:
-
-```text
-Passed: 13/13
-```
-
-Run the performance experiments:
-
-```bash
-java Experiment
-```
-
-This generates the file:
-
-```text
-results/results.csv
-```
 
 The CSV contains the number of patterns, text length, algorithm name, average execution time in nanoseconds and milliseconds, match count, and number of runs.
 
